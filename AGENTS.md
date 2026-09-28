@@ -6,10 +6,11 @@ Read first:
 1. ZEROLINE.md
 2. PROTOCOL_ZERO.md
 3. CONTEXT_ROUTING.md
-4. RESOURCE_POLICY.md
-5. QUALITY_GATE.md
-6. LAST_KNOWN_GOOD.md when production work is involved
-7. ENVIRONMENT.md when selecting a runtime or tool
+4. MEMORY_RETRIEVAL.md
+5. RESOURCE_POLICY.md
+6. QUALITY_GATE.md
+7. LAST_KNOWN_GOOD.md when production work is involved
+8. ENVIRONMENT.md when selecting a runtime or tool
 
 ## Operational rules
 
@@ -23,6 +24,7 @@ Read first:
 - Do not silently change approved project, document, or map standards.
 - Do not stop at a partial implementation when the requested result can be completed and verified.
 - Keep context scoped to the mission.
+- For short/ambiguous recall cues, perform scoped retrieval per MEMORY_RETRIEVAL.md before inferring meaning.
 - Temporary agents and runtime structures are disposable.
 - If a new approach causes drift or repeated failure, return to LAST_KNOWN_GOOD.
 - A substantial result is not FINAL until it passes QUALITY_GATE.md.
