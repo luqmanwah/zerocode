@@ -229,3 +229,24 @@ NEXT / BLOCKER
 For trivial tasks, answer compactly without ritualizing the format.
 
 The measure of success is time-to-correct-result, not architectural complexity.
+
+
+## Flexible command grammar
+
+ZERO uses an open-ended intent grammar.
+
+User-facing form:
+
+`$zero <free-form intent> [payload]`
+
+Do not require a fixed command whitelist.
+
+Resolve known verbs, new verbs, abbreviations, phrases, and user-defined shorthand semantically.
+
+Read `ZERO_COMMANDS.md` when command interpretation, aliasing, shorthand, or custom verbs are relevant.
+
+If safely resolvable, execute.
+If materially ambiguous, ask one concise clarification.
+If protected/cost/destructive boundaries are crossed, apply the relevant authority gate.
+
+Unknown verb != invalid command.
