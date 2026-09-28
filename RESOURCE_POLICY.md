@@ -52,15 +52,20 @@ Do not load full project history unless the task genuinely requires it.
 
 ## Service budget
 
-Current baseline services:
+Core baseline surfaces:
 - GPT Web
 - Codex Desktop
-- existing OpenClaw on Zeabur
 - Google Drive Work Mode
 - GitHub
-- optional InsForge only when it removes a current bottleneck
 
-Any additional runtime/service requires a concrete reason tied to an active task.
+Optional runtimes/adapters are inactive by default:
+- OpenClaw
+- Zeabur
+- InsForge
+- future external services
+
+Activate an optional runtime only when a concrete active-task bottleneck justifies it.
+The existence of a service does not make it part of the active route.
 
 ## Cost rule
 
