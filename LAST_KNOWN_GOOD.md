@@ -77,3 +77,22 @@ Verification:
 - installed skill sync with canonical source: PASS
 
 Status: READY
+
+
+## Verified canonical skill synchronization
+
+Status: READY
+
+- canonical skill path (local): `C:\Users\Luqman\Documents\Codex\2026-09-28\zero-read-and-execute-docs-codex\work\zerocode\skills\zero`
+- installed Codex skill: `C:\Users\Luqman\.codex\skills\zero`
+- link type: Windows Junction
+- installed skill resolves directly to canonical repository skill
+- skill discovery: PASS
+- canonical sync: PASS
+- memory retrieval: PASS
+- manual sync action required: NONE
+
+Operational consequence:
+`git pull` on the local ZEROCODE repository updates the ZERO skill seen by Codex without copying `SKILL.md`.
+
+The repository remains the source of truth.
