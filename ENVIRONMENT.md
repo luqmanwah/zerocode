@@ -1,28 +1,35 @@
-# ZEROCODE Environment v0.1
+# ZEROCODE Environment v0.2
 
-## GPT Web
+## Active core surfaces
+
+### GPT Web
 Role: reasoning, synthesis, research, review, planning, final QA.
 
-## Codex Desktop
+### Codex Desktop
 Role: local execution, code, batch processing, document transformation, repository work, tests, deterministic automation.
 
-## OpenClaw on Zeabur
-Role: always-on research/utility worker, collection, extraction, monitoring, classification, long-running work.
+### Google Drive Work Mode
+Role: private/shared artifact plane for documents, evidence, research packs, working files, review files, and final outputs.
 
-## Google Drive Work Mode
-Role: shared artifact plane for documents, maps, evidence, research packs, working files, review files, and final outputs.
+### GitHub
+Role: versioned protocol, code, configuration, scoped memory archives, adapters, tests, and fallback references.
 
-## GitHub
-Role: versioned protocol, code, configuration, adapters, tests, and fallback references.
+## Optional runtime adapters — inactive by default
 
-## Zeabur
-Role: experimental execution field. It may be rebuilt or replaced without changing ZEROLINE.
+### OpenClaw
+Use only when a mission needs long-running or independent utility work.
 
-## InsForge
-Role: current candidate operational backend adapter. Replaceable.
+### Zeabur
+Use only as an execution field when a continuously running service is justified.
+
+### InsForge
+Use only as a replaceable backend adapter when persistence is genuinely needed.
+
+None of these optional adapters define ZERO.
 
 ## Supabase
-Not part of the ZEROCODE baseline.
+Retired from the active ZEROCODE architecture. Historical AOA context is preserved outside Supabase.
 
 ## Separation from PYXIS/AOA
-ZEROCODE may learn from and imitate useful PYXIS concepts, but it must not silently rewrite canonical PYXIS/AOA semantics.
+ZEROCODE may learn from useful PYXIS/AOA research while keeping that context scoped.
+It must not silently rewrite canonical PYXIS/AOA semantics.
