@@ -55,3 +55,25 @@ If a new model/tool/workflow loses the objective, violates a hardline, changes a
 5. Record only the operational lesson that matters.
 
 This file records a proven fallback route, not immutable infrastructure.
+
+
+## Verified ZERO Codex Skill
+
+Canonical skill:
+- repository: `luqmanwah/zerocode`
+- path: `skills/zero/SKILL.md`
+- explicit command: `$zero`
+- verified remote main: `e8cdcd65eff74fa170c9cf0f07e46bd3db87c8f0`
+- installed location: `C:\Users\Luqman\.codex\skills\zero`
+
+Verification:
+- discovery: PASS
+- ZERO invocation: PASS
+- scoped memory retrieval: PASS
+- ordinary-task isolation: PASS
+- infrastructure lazy-load: PASS
+- optional runtime activation: NO
+- legacy route reintroduction: NO
+- installed skill sync with canonical source: PASS
+
+Status: READY
