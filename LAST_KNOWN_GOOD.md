@@ -1,30 +1,35 @@
-# LAST KNOWN GOOD — ZEROCODE v0.1
+# LAST KNOWN GOOD — ZEROCODE v0.2
 
-Status: BOOTSTRAP
+Status: BOOTSTRAP-STABLE
 
 ## Stable behavioral route
 
 READ -> UNDERSTAND -> OBJECTIVE -> HARDLINES -> METHOD -> EXECUTE -> VERIFY -> RESULT -> NEXT
 
-## Stable environment assumptions
+## Minimum stable environment
 
 - GPT Web: reasoning, research, synthesis, review, planning, final QA.
-- Codex Desktop: local execution, coding, batch processing, document automation, repository work, testing.
-- OpenClaw on Zeabur: research scout, browser/collection worker, long-running utility work.
-- Google Drive Work Mode: shared artifact and evidence workspace.
-- GitHub: protocol, code, configuration, adapters, tests, and Last Known Good references.
-- Zeabur: experimental runtime field.
-- InsForge: candidate replaceable backend adapter.
-- Supabase: excluded.
+- Codex Desktop: execution, coding, local automation, file/repository work.
+- Google Drive Work Mode: artifact/evidence workspace.
+- GitHub: protocol/config/code/scoped archive.
+
+## Optional, not required
+
+- OpenClaw
+- Zeabur
+- InsForge
+- future runtimes/backends
+
+The stable route must remain functional without optional infrastructure.
 
 ## Failure recovery
 
 If a new model/tool/workflow loses the objective, violates a hardline, changes an approved output standard without authority, or repeatedly fails:
 
 1. Stop the experimental route.
-2. Restore the stable behavioral route above.
+2. Return to the minimum stable environment.
 3. Use the simplest previously successful method.
 4. Finish the work.
-5. Record the experiment separately as a lesson.
+5. Record only the operational lesson that matters.
 
 This file records a fallback route, not immutable infrastructure.
