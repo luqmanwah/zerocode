@@ -49,3 +49,17 @@ If retrieval finds nothing:
 - say no scoped record was found;
 - then infer only if useful;
 - do not claim the inference was remembered.
+
+
+## Deterministic cue lookup
+
+For short/ambiguous recall cues, do not stop at conceptual files.
+
+When the current task is a ZEROCODE memory-routing test:
+1. normalize only for matching (lowercase, whitespace, punctuation/apostrophe tolerance),
+2. search `tests/memory/records/` for exact text and `cue:` fields,
+3. prefer an exact/near-exact stored cue over interpretation,
+4. return the stored content with its TEST/non-canonical status,
+5. infer only after the scoped search is exhausted.
+
+A statement such as "no stored meaning found" is valid only after the required scoped locations were actually checked.
