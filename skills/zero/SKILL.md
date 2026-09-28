@@ -28,6 +28,8 @@ Load conditionally:
 - `AUTHORITY.md` for protected changes or external actions
 - `ENVIRONMENT.md` only when selecting infrastructure/runtime
 
+For runtime topology questions, read [references/INFRASTRUCTURE.md](references/INFRASTRUCTURE.md) before answering. Leave it unloaded for unrelated missions.
+
 Do not preload the entire repository.
 
 ## Invocation
