@@ -1,0 +1,22 @@
+# ZEROCODE project-level Codex configuration.
+# Secrets are NOT stored here. Set the required environment variables locally.
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+enabled = true
+
+[mcp_servers.zeabur]
+command = "npx"
+args = ["-y", "@zeabur/mcp-server"]
+env_vars = ["ZEABUR_TOKEN"]
+enabled = true
+
+[mcp_servers.insforge]
+command = "pwsh"
+args = [
+  "-NoProfile",
+  "-Command",
+  "$env:API_KEY=$env:INSFORGE_API_KEY; $env:API_BASE_URL=$env:INSFORGE_API_BASE_URL; npx -y @insforge/mcp@latest"
+]
+env_vars = ["INSFORGE_API_KEY", "INSFORGE_API_BASE_URL"]
+enabled = true
