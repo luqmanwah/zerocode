@@ -69,16 +69,35 @@ AOA/PYXIS research must remain isolated from unrelated professional or daily wor
 
 ## Retrieval before inference
 
-For a short, ambiguous, or recall-like cue:
-1. search the active scoped sources first;
-2. prefer exact or near-exact stored cues over semantic guessing;
-3. preserve the record status;
-4. infer only if scoped retrieval fails.
+For a short, ambiguous, named, or recall-like cue, retrieval is mandatory before interpretation.
+
+Use this deterministic order:
+
+1. Normalize the cue for matching only:
+   - lowercase
+   - trim surrounding whitespace
+   - tolerate punctuation/apostrophe differences
+   - do not rewrite semantic meaning
+
+2. Search the currently active scoped sources for:
+   - exact cue text,
+   - exact normalized cue,
+   - near-exact phrase match,
+   - explicit `cue:` fields.
+
+3. If this is a ZEROCODE memory-routing test or the input is a short recall-like phrase and the repository is available, search:
+   `tests/memory/records/`
+   before producing any semantic interpretation.
+
+4. If a stored record matches:
+   - use the stored content;
+   - preserve its scope/status;
+   - do not promote TEST, RESEARCH, HISTORICAL, or PROPOSAL content to canon.
+
+5. Only if scoped retrieval returns no match may you infer a meaning.
 
 Never claim an inference was remembered.
-
-Synthetic ZEROCODE memory tests may use:
-`tests/memory/records/`
+Never say "no stored meaning" until the scoped retrieval locations required above were actually checked.
 
 AOA/PYXIS historical memory may be consulted only when the active scope actually requires it and the private AOA memory source is available.
 
