@@ -5,10 +5,11 @@ Scope: this repository.
 Read first:
 1. ZEROLINE.md
 2. PROTOCOL_ZERO.md
-3. RESOURCE_POLICY.md
-4. QUALITY_GATE.md
-5. LAST_KNOWN_GOOD.md when production work is involved
-6. ENVIRONMENT.md when selecting a runtime or tool
+3. CONTEXT_ROUTING.md
+4. RESOURCE_POLICY.md
+5. QUALITY_GATE.md
+6. LAST_KNOWN_GOOD.md when production work is involved
+7. ENVIRONMENT.md when selecting a runtime or tool
 
 ## Operational rules
 
