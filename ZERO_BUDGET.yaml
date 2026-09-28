@@ -1,0 +1,36 @@
+version: ZB-0.1
+mode: minimal
+
+reasoners:
+  default: 1
+
+child_agents:
+  default: 0
+  soft_max: 1
+  hard_max_without_explicit_justification: 3
+
+retries:
+  deterministic: 2
+  agent_route: 2
+
+background_workers:
+  default: 0
+
+new_services:
+  default: 0
+
+vector_store:
+  default: false
+
+queue:
+  default: false
+
+paid_actions:
+  allowed_without_approval: false
+
+context:
+  strategy: relevant_only
+
+completion:
+  require_quality_gate: true
+  allow_partial_as_final: false
