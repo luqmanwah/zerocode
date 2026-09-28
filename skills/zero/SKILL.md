@@ -42,6 +42,44 @@ Also treat a user message beginning with `ZERO:` as an explicit ZERO invocation.
 
 If invoked as only `$zero` or `ZERO`, infer the objective from the active conversation/workspace. Ask only when the objective cannot be resolved safely.
 
+## ZeroID mission invocation
+
+Preferred handoff syntax:
+
+```
+$zero
+
+Execute the following mission exactly: [ZEROID]
+```
+
+A `ZEROID` is a mission address, not the mission content itself.
+
+When this pattern is received:
+
+1. Extract the ZeroID exactly.
+2. Resolve it from the canonical mission store before reasoning about the task.
+3. Load only that mission packet plus the minimum ZEROCODE files required to execute it.
+4. Do not ask the user to paste the mission again if the ZeroID resolves successfully.
+5. Execute the mission exactly as stored.
+6. Verify against the mission's own DONE/VERIFY conditions.
+7. Return the mission result, not the whole internal mission packet.
+
+Canonical repository mission path:
+
+`missions/<ZEROID>.md`
+
+Fallback scoped lookup when needed:
+
+`tests/handoff/missions/<ZEROID>.md`
+
+If more than one record exists for the same ZeroID, stop and report a collision instead of guessing.
+
+If the ZeroID cannot be found, return:
+
+`ZEROID_NOT_FOUND: <ZEROID>`
+
+Do not infer a mission from the name alone.
+
 ## Core loop
 
 Follow:
