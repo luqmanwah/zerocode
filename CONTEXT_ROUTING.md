@@ -106,3 +106,14 @@ If unrelated context appears in reasoning or output:
 4. continue without deleting the underlying knowledge.
 
 The goal is context separation, not knowledge deletion.
+
+
+## Retrieval-before-inference rule
+
+When a short or ambiguous cue may refer to previously stored project knowledge, memory, or a synthetic routing fixture:
+1. retrieve from the active scope first,
+2. prefer exact/near-exact stored cues over semantic guessing,
+3. preserve the record's status,
+4. infer only after scoped retrieval fails.
+
+See `MEMORY_RETRIEVAL.md`.
