@@ -1,4 +1,4 @@
-# ZERO — Invocation Contract v0.1
+# ZERO — Invocation Contract v0.2
 
 ZERO is the single operational entrypoint for ZEROCODE.
 
@@ -19,8 +19,8 @@ ZERO: <objective>
 ```
 
 Examples:
-- ZERO: finish the active PKKPRL revision
-- ZERO: audit this document and repair it
+- ZERO: finish the active work using the safest reliable route
+- ZERO: audit the active artifact and repair it
 - ZERO: research the missing evidence and prepare the handoff
 - ZERO: continue the current task using the safest fastest route
 
@@ -44,11 +44,11 @@ When invoked, ZERO must:
 ZERO may route work to:
 - GPT Web for reasoning/research/review
 - Codex Desktop for execution/build
-- OpenClaw on Zeabur for long-running utility/research work
 - deterministic scripts/tools when AI is unnecessary
-- InsForge as a replaceable operational backend when useful
 - Google Drive for artifacts/evidence
 - GitHub for protocol/config/code
+- optional long-running worker only when the mission actually requires one
+- optional replaceable backend adapter only when persistence is genuinely needed
 
 Routing is implementation detail and may change without approval as long as hardlines remain intact.
 
